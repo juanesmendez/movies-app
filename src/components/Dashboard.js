@@ -21,12 +21,15 @@ class Dashboard extends Component {
             <div>
                 <div className="row">
                     <div className="col-9">
-                        <MoviesList handleInfo={this.handleMovieInfo} />
-                        <MoviesChart movies={this.state.movies} />
+                        <div className="container-fluid">
+                            <MoviesList handleInfo={this.handleMovieInfo} />
+                            <MoviesChart movies={this.state.movies} />
+                        </div>
+
                     </div>
                     <div className="col-3">
                         <div className="container-fluid">
-                            <h2><FormattedMessage id="Title2" /></h2>
+                            <h2 className="bg-info"><FormattedMessage id="Title2" /></h2>
                             <br></br>
                             <MovieInfo info={this.state.movieInfo} />
                         </div>

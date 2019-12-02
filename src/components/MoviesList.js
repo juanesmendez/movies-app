@@ -51,7 +51,7 @@ class MoviesList extends Component {
     render() {
         return (
             <div>
-                <h1><FormattedMessage id="Title1" /></h1>
+                <h1 className="bg-info text-left"><FormattedMessage id="Title1" /></h1>
                 <br></br>
                 <table className="table table-hover">
                     <thead className="thead-dark">

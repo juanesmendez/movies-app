@@ -103,7 +103,7 @@ class MoviesChart extends Component {
     render() {
         return (
             <div>
-                <h2><FormattedMessage id="Title3" /></h2>
+                <h2 className="bg-info"><FormattedMessage id="Title3" /></h2>
 
                 <div ref="canvas">
 
