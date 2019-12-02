@@ -14,11 +14,11 @@ class MovieInfo extends Component {
         else {
             return (
                 <div className="card">
-                    <img src={this.props.info.poster} class="card-img-top" alt="movie"></img>
+                    <img src={this.props.info.poster} className="card-img-top" alt="movie"></img>
                     <div class="card-body">
-                        <h5 class="card-title">{this.props.info.name}</h5>
-                        <p class="card-text">{this.props.info.description}</p>
-                        <p><b>Cast:</b> {this.props.info.cast}</p>
+                        <h5 className="card-title">{this.props.info.name}</h5>
+                        <p className="card-text text-left">{this.props.info.description}</p>
+                        <p className="card-text text-left"><b>Cast:</b> {this.props.info.cast}</p>
                     </div>
                 </div>
             );

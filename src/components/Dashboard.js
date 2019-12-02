@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import MoviesList from './MoviesList';
 import MovieInfo from './MovieInfo';
+import MoviesChart from './MoviesChart';
+
+import { FormattedMessage } from 'react-intl';
 
 class Dashboard extends Component {
 
@@ -17,12 +20,13 @@ class Dashboard extends Component {
         return (
             <div>
                 <div className="row">
-                    <div className="col-8">
+                    <div className="col-9">
                         <MoviesList handleInfo={this.handleMovieInfo} />
+                        <MoviesChart movies={this.state.movies} />
                     </div>
-                    <div className="col-4">
+                    <div className="col-3">
                         <div className="container-fluid">
-                            <h1>Movie Info</h1>
+                            <h2><FormattedMessage id="Title2" /></h2>
                             <br></br>
                             <MovieInfo info={this.state.movieInfo} />
                         </div>
