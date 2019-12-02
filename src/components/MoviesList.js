@@ -51,7 +51,9 @@ class MoviesList extends Component {
     render() {
         return (
             <div>
-                <h1 className="bg-info text-left"><FormattedMessage id="Title1" /></h1>
+                <h1 className="bg-info text-left"><img src="https://icon-library.net/images/movie-png-icon/movie-png-icon-0.jpg"
+                    style={imgStyle} />
+                    <FormattedMessage id="Title1" /></h1>
                 <br></br>
                 <table className="table table-hover">
                     <thead className="thead-dark">
@@ -73,5 +75,12 @@ class MoviesList extends Component {
         );
     }
 }
+
+const imgStyle = {
+    width: "50px",
+    height: "50px",
+    padding: "10px",
+    marginBottom: "7px",
+};
 
 export default MoviesList;

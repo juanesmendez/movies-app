@@ -29,7 +29,7 @@ class Dashboard extends Component {
                     </div>
                     <div className="col-3">
                         <div className="container-fluid">
-                            <h2 className="bg-info"><FormattedMessage id="Title2" /></h2>
+                            <h2 className="bg-warning"><FormattedMessage id="Title2" /></h2>
                             <br></br>
                             <MovieInfo info={this.state.movieInfo} />
                         </div>
