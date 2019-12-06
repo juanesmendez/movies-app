@@ -17,7 +17,7 @@ class Dashboard extends Component {
             if (localStorage.getItem('movies') === null)
                 this.setState({ movies: [] })
             else
-                this.setState({ movies: localStorage.getItem('movies') });
+                this.setState({ movies: JSON.parse(localStorage.getItem('movies')) });
         }
 
         if (this.language() === "es") {
@@ -25,7 +25,7 @@ class Dashboard extends Component {
                 .then(res => res.json())
                 .then(res => {
                     this.setState({ movies: res });
-                    localStorage.setItem('movies', res);
+                    localStorage.setItem('movies', JSON.stringify(res));
                     console.log(this.state.movies);
                 })
         } else if (this.language() === "en") {
@@ -33,7 +33,7 @@ class Dashboard extends Component {
                 .then(res => res.json())
                 .then(res => {
                     this.setState({ movies: res });
-                    localStorage.setItem('movies', res);
+                    localStorage.setItem('movies', JSON.stringify(res));
                     console.log(this.state.movies);
                 })
         }
