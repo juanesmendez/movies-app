@@ -10,6 +10,16 @@ Web app developed with React, that shows a table with a list of movies. When the
 - The web app supports offline mode, thanks to React's PWA (Progressive Web APP) support. For the support of this feature, the app has to be running on production mode, by first executing the following commands: `yarn build` and `yarn start`, in the corresponding order.
 - The chart 📊 was developed using the D3 Javascript library .
 
+### Screenshot of the app running
+
+- Table and movie information.
+
+![](wiki-images/image-1.png)
+
+- Chart
+
+![](wiki-images/image-2.png)
+
 ## How to run the project? 💻
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
