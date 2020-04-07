@@ -1,3 +1,17 @@
+# Movies App 🎬🍿
+
+## Description 🗒
+
+Web app developed with React, that shows a table with a list of movies. When the user clicks on one of the rows of the table, information of the selected movie is displayed on a panel on the right side of the page. On the bottom of the page, a bar chart is displayed with the number of ratings each movie has.
+
+- Bootstrap was used as the CSS UI framework. 
+- The app supports two languages: english 🇺🇸 and spanish 🇪🇸. 
+- The language displayed depends on the browser's language setting. The apps data is contained in JSON files stored inside the project's structure.
+- The web app supports offline mode, thanks to React's PWA (Progressive Web APP) support. For the support of this feature, the app has to be running on production mode, by first executing the following commands: `yarn build` and `yarn start`, in the corresponding order.
+- The chart 📊 was developed using the D3 Javascript library .
+
+## How to run the project? 💻
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
